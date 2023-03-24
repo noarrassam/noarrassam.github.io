@@ -13,27 +13,33 @@
 
     <style>
       body {
-        height: 97vh;
+        width: 100%;
+        height: 100%;
       }
+
       .img-fluid {
         width: 100%;
-        height: 30.25%;
+        height: 30.7%;
         opacity: 0.4;
       }
 
       #grad1 {
         width: 100%;
         text-align: center;
-        background-image: linear-gradient(
-          0deg,
-          rgb(129, 124, 124),
-          rgb(228, 228, 228)
-        );
-        font-family: Georgia, "Times New Roman", Times, serif;
+        font-family: cursive;
         font-size: 40;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 20px;
+        background-color: rgba(122, 186, 245, 0.2);
+        -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      #grad1:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: background-color 1s ease;
       }
 
       .p2 {
@@ -54,6 +60,34 @@
 
       .container-fluid {
         padding: 0;
+      }
+
+      .text-center {
+        margin-top: 0.78%;
+      }
+
+      .accordion {
+        background-color: rgba(122, 186, 245, 0.2);
+        width: 100%;
+        height: 50%;
+        overflow: scroll;
+      }
+
+      li a {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .navbar-brand {
+        font-family: Cursive;
+      }
+
+      .text-white {
+        font-family: "Times New Roman";
+      }
+
+      .accordion-button {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 55%;
       }
     </style>
   </head>
@@ -88,15 +122,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
+                  <a class="nav-link" aria-current="page" href="./index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./experience.html">Experience</a>
+                  <a class="nav-link active" href="./experience.html"
+                    >Experience</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./education.html">Education</a>
@@ -280,9 +313,9 @@
     </div>
 
     <footer class="bg-dark text-center text-white">
-      <div class="container p-4 pb-0">
+      <!-- <div class="container p-4 pb-0">
         <section class="mb-4"></section>
-      </div>
+      </div> -->
 
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2023 Copyright:

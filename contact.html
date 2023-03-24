@@ -13,7 +13,8 @@
 
     <style>
       body {
-        height: 97vh;
+        width: 100%;
+        height: 100%;
       }
 
       .img-fluid {
@@ -25,16 +26,20 @@
       #grad1 {
         width: 100%;
         text-align: center;
-        background-image: linear-gradient(
-          0deg,
-          rgb(129, 124, 124),
-          rgb(228, 228, 228)
-        );
-        font-family: Georgia, "Times New Roman", Times, serif;
+        font-family: cursive;
         font-size: 40;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 20px;
+        background-color: rgba(122, 186, 245, 0.2);
+        -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      #grad1:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: background-color 1s ease;
       }
 
       .p2 {
@@ -49,16 +54,12 @@
         margin-left: 25%;
       }
 
-      .height {
-        height: 80%;
-      }
-
       .noorImg {
-        width: 42.5%;
-        height: 70%;
+        width: 50%;
+        height: 63%;
         border-radius: 50%;
-        margin-left: 230px;
-        margin-top: 15px;
+        margin-left: 200px;
+        margin-top: 40px;
       }
 
       .text {
@@ -74,8 +75,57 @@
       }
 
       .emp {
+        font-family: Monospace;
         font-weight: bold;
         font-size: 100%;
+        animation: slideleft 1s linear forwards;
+        opacity: 0;
+      }
+
+      .emp1 {
+        font-family: Monospace;
+        font-weight: bold;
+        font-size: 100%;
+        animation: slideleft 1s linear forwards;
+        opacity: 0;
+      }
+
+      .socialMedia {
+        opacity: 0;
+        animation: slideleft 1s linear forwards;
+      }
+
+      .bg-secondary {
+        margin-left: 19%;
+      }
+
+      .cont {
+        font-family: Monospace;
+        opacity: 0;
+        animation: slideleft 1s linear forwards;
+      }
+
+      @keyframes slideleft {
+        0% {
+          transform: translate(0px);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(100px);
+          opacity: 1;
+        }
+      }
+
+      p.emp1 {
+        animation-delay: 2s;
+      }
+
+      p.cont {
+        animation-delay: 1s;
+      }
+
+      .socialMedia {
+        animation-delay: 3s;
       }
 
       .cont {
@@ -84,7 +134,8 @@
 
       .content {
         display: flex;
-        height: 51.2%;
+        height: 56.44%;
+        background-color: rgba(122, 186, 245, 0.2);
       }
 
       .contactInfoRight {
@@ -114,6 +165,22 @@
         .contactInfoRight {
           margin-left: 20px;
         }
+      }
+
+      li a {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .navbar-brand {
+        font-family: Cursive;
+      }
+
+      .text {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .text-white {
+        font-family: "Times New Roman";
       }
     </style>
   </head>
@@ -148,10 +215,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
+                  <a class="nav-link" aria-current="page" href="./index.html"
                     >Home</a
                   >
                 </li>
@@ -165,7 +229,9 @@
                   <a class="nav-link" href="./portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./contact.html">Contact Me</a>
+                  <a class="nav-link active" href="./contact.html"
+                    >Contact Me</a
+                  >
                 </li>
               </ul>
             </div>
@@ -190,26 +256,33 @@
           <p class="cont">
             Please contact me at my email: noar.s.rassam@gmail.com
           </p>
-          <p class="emp">Follow Me on:</p>
-          <a href="https://www.linkedin.com/in/noarrassam/">
-            <img
-              alt="Qries"
-              src="./images/linkedin.png"
-              width="50"
-              height="50"
-            />
-          </a>
-          <a href="https://github.com/noarrassam">
-            <img alt="Qries" src="./images/github.png" width="50" height="50" />
-          </a>
+          <p class="emp1">Follow Me on:</p>
+          <div class="socialMedia">
+            <a href="https://www.linkedin.com/in/noarrassam/">
+              <img
+                alt="Qries"
+                src="./images/linkedin.png"
+                width="50"
+                height="50"
+              />
+            </a>
+            <a href="https://github.com/noarrassam">
+              <img
+                alt="Qries"
+                src="./images/github.png"
+                width="50"
+                height="50"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
     <footer class="bg-dark text-center text-white">
-      <div class="container p-4 pb-0">
+      <!-- <div class="container p-4 pb-0">
         <section class="mb-4"></section>
-      </div>
+      </div> -->
 
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2023 Copyright:

@@ -13,32 +13,38 @@
 
     <style>
       body {
-        height: 97vh;
+        width: 100%;
+        height: 100%;
       }
 
       .img-fluid {
         width: 100%;
-        height: 200px;
+        height: 24.9%;
         opacity: 0.4;
       }
 
       #grad1 {
         width: 100%;
         text-align: center;
-        background-image: linear-gradient(
-          0deg,
-          rgb(129, 124, 124),
-          rgb(228, 228, 228)
-        );
-        font-family: Georgia, "Times New Roman", Times, serif;
+        font-family: cursive;
         font-size: 40;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 20px;
+        background-color: rgba(122, 186, 245, 0.2);
+        -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      #grad1:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: background-color 1s ease;
       }
 
       .p2 {
         opacity: 0.3;
+        overflow: hidden;
       }
 
       .list-group-mine .list-group-item {
@@ -50,11 +56,73 @@
       }
 
       .height {
-        height: 56.7%;
+        height: 57.35%;
       }
 
       .container-fluid {
         padding: 0;
+      }
+      .col:hover {
+        background-color: aliceblue;
+      }
+
+      p {
+        opacity: 0;
+      }
+
+      .mb-3 {
+        animation: slideleft 1s linear forwards;
+        font-family: fantasy;
+        font-size: 180%;
+      }
+
+      .mb-2 {
+        animation: slideleft 1s linear forwards;
+        font-family: monospace;
+        font-size: 18px;
+      }
+
+      li a {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .navbar-brand {
+        font-family: Cursive;
+      }
+
+      .text-white {
+        font-family: "Times New Roman";
+      }
+
+      @keyframes slideleft {
+        0% {
+          transform: translate(100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(0px);
+          opacity: 1;
+        }
+      }
+
+      p.p1 {
+        animation-delay: 1s;
+      }
+
+      p.p6 {
+        animation-delay: 1.5s;
+      }
+
+      p.p3 {
+        animation-delay: 2s;
+      }
+
+      p.p4 {
+        animation-delay: 2.5s;
+      }
+
+      p.p5 {
+        animation-delay: 3s;
       }
 
       @media screen and (max-width: 540px) {
@@ -211,38 +279,40 @@
             href="#"
             class="list-group-item list-group-item-action flex-column align-items-start active"
           >
-            <h5 class="mb-1">Who I am?</h5>
+            <h5 class="mb-3">Who I am?</h5>
           </a>
           <a
             href="#"
             class="list-group-item list-group-item-action flex-column align-items-start active"
           >
-            <p class="mb-1">Web Developer with 7+ years of experience.</p>
+            <p class="mb-2 p1">Web Developer with 7+ years of experience.</p>
           </a>
           <a
             href="#"
             class="list-group-item list-group-item-action flex-column align-items-start active"
           >
-            <p class="mb-1">
+            <p class="mb-2 p6">
               Specializing in Front and Back End technologies.
             </p> </a
           ><a
             href="#"
             class="list-group-item list-group-item-action flex-column align-items-start active"
           >
-            <p class="mb-1">Front End Tech: ReactJS, JavaScript, TypeScript.</p>
+            <p class="mb-2 p3">
+              Front End Tech: ReactJS, JavaScript, TypeScript.
+            </p>
           </a>
           <a
             href="#"
             class="list-group-item list-group-item-action flex-column align-items-start active"
           >
-            <p class="mb-1">Back End Tech: Express, Node, Java.</p>
+            <p class="mb-2 p4">Back End Tech: Express, Node, Java.</p>
           </a>
           <a
             href="#"
             class="list-group-item list-group-item-action flex-column align-items-start active"
           >
-            <p class="mb-1">Proficient in UI Design.</p>
+            <p class="mb-2 p5">Proficient in UI Design.</p>
           </a>
         </div>
       </div>
@@ -268,9 +338,9 @@
     </div>
 
     <footer class="bg-dark text-center text-white">
-      <div class="container p-4 pb-0">
+      <!-- <div class="container p-4 pb-0">
         <section class="mb-4"></section>
-      </div>
+      </div> -->
 
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2023 Copyright:
